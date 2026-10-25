@@ -1,0 +1,5 @@
+/**
+ * Campus Compass — Application Style Entrypoint
+ * Imports the token design system and global rules.
+ */
+@import './styles/global.css';
