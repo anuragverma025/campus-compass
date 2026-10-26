@@ -2,21 +2,46 @@
   background-color: var(--bg-card);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
-  padding: var(--space-6);
   position: relative;
-  transition: all var(--transition-normal);
-  overflow: hidden;
+  transition: border-color var(--transition-fast),
+              box-shadow var(--transition-fast),
+              background-color var(--transition-fast),
+              transform var(--transition-fast);
+  color: var(--text-primary);
+  box-sizing: border-box;
 }
 
+/* Padding options */
+.card--padding-none {
+  padding: 0;
+}
+
+.card--padding-sm {
+  padding: var(--space-3) var(--space-4);
+}
+
+.card--padding-md {
+  padding: var(--space-5) var(--space-6);
+}
+
+.card--padding-lg {
+  padding: var(--space-8);
+}
+
+/* Variants */
 .card--default {
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-sm);
 }
 
-.card--interactive:hover {
-  transform: translateY(-4px);
+.card--elevated {
+  background-color: var(--bg-elevated);
+  box-shadow: var(--shadow-md);
   border-color: var(--border-medium);
-  box-shadow: var(--shadow-xl), 0 0 20px rgba(99, 102, 241, 0.15);
-  background-color: var(--bg-card-hover);
+}
+
+.card--outline {
+  background-color: transparent;
+  border-color: var(--border-medium);
 }
 
 .card--glass {
@@ -26,6 +51,21 @@
   border: 1px solid var(--border-medium);
 }
 
+/* Interactive / Hoverable */
+.card--interactive:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-medium);
+  box-shadow: var(--shadow-md), 0 0 15px rgba(99, 102, 241, 0.12);
+  background-color: var(--bg-card-hover);
+}
+
 .card--clickable {
   cursor: pointer;
+  user-select: none;
+}
+
+.card--clickable:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+  border-color: var(--color-primary);
 }

@@ -8,39 +8,66 @@
   /* Color Palette - Brand & Semantics */
   --color-primary: #4f46e5;
   --color-primary-hover: #4338ca;
+  --color-primary-active: #3730a3;
   --color-primary-light: #eef2ff;
   --color-primary-glow: rgba(79, 70, 229, 0.25);
 
   --color-secondary: #0ea5e9;
   --color-secondary-hover: #0284c7;
+  --color-secondary-active: #0369a1;
   --color-secondary-light: #f0f9ff;
 
   --color-accent: #8b5cf6;
+  --color-accent-hover: #7c3aed;
   --color-accent-light: #f5f3ff;
 
   --color-success: #10b981;
-  --color-success-light: #ecfdf5;
+  --color-success-hover: #059669;
+  --color-success-light: rgba(16, 185, 129, 0.12);
+  --color-success-text: #6ee7b7;
+
   --color-warning: #f59e0b;
-  --color-warning-light: #fffbeb;
+  --color-warning-hover: #d97706;
+  --color-warning-light: rgba(245, 158, 11, 0.12);
+  --color-warning-text: #fcd34d;
+
   --color-danger: #ef4444;
-  --color-danger-light: #fef2f2;
+  --color-danger-hover: #dc2626;
+  --color-danger-light: rgba(239, 68, 68, 0.12);
+  --color-danger-text: #fca5a5;
+
+  --color-info: #0ea5e9;
+  --color-info-hover: #0284c7;
+  --color-info-light: rgba(14, 165, 233, 0.12);
+  --color-info-text: #7dd3fc;
 
   /* Surfaces & Backgrounds */
   --bg-app: #0b0f19;
+  --bg-surface: #111726;
   --bg-card: #131a2a;
   --bg-card-hover: #182238;
   --bg-subtle: #1f2b45;
+  --bg-elevated: #1e293b;
+  --bg-overlay: rgba(11, 15, 25, 0.75);
   --bg-glass: rgba(19, 26, 42, 0.75);
 
   /* Border & Dividers */
   --border-subtle: rgba(255, 255, 255, 0.08);
   --border-medium: rgba(255, 255, 255, 0.14);
-  --border-focus: rgba(99, 102, 241, 0.6);
+  --border-strong: rgba(255, 255, 255, 0.22);
+  --border-focus: #6366f1;
+  --border-danger: #ef4444;
+
+  /* Focus Ring */
+  --focus-ring: 0 0 0 3px rgba(99, 102, 241, 0.35);
+  --focus-ring-danger: 0 0 0 3px rgba(239, 68, 68, 0.35);
+  --focus-offset: 2px;
 
   /* Text & Content */
   --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
   --text-muted: #64748b;
+  --text-disabled: #475569;
   --text-inverse: #0f172a;
 
   /* Gradients */
@@ -99,6 +126,13 @@
   --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Z-Index Layers */
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal-backdrop: 500;
+  --z-modal: 510;
+  --z-tooltip: 600;
 
   /* Layout Containers */
   --container-max-width: 1200px;
