@@ -1,0 +1,128 @@
+/**
+ * Campus Compass — Feature Placeholder Page Styles
+ * Minimal placeholder view styles for routes scheduled for subsequent phases
+ */
+
+.placeholder-page {
+  padding-top: var(--space-8);
+  padding-bottom: var(--space-12);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.placeholder-page__back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-sm);
+  color: var(--text-muted);
+  margin-bottom: var(--space-4);
+  transition: color var(--transition-fast);
+  width: fit-content;
+}
+
+.placeholder-page__back-link:hover {
+  color: var(--text-primary);
+}
+
+.placeholder-page__back-link:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.placeholder-page__title-row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+}
+
+.placeholder-page__icon-box {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-lg);
+  background: rgba(79, 70, 229, 0.12);
+  border: 1px solid rgba(79, 70, 229, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #818cf8;
+  flex-shrink: 0;
+}
+
+.placeholder-page__meta-badge {
+  margin-bottom: var(--space-2);
+}
+
+.placeholder-page__title {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-extrabold);
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.placeholder-page__desc {
+  font-size: var(--font-size-base);
+  color: var(--text-secondary);
+  max-width: 640px;
+  line-height: 1.6;
+}
+
+.placeholder-page__card {
+  padding: var(--space-10) var(--space-6);
+  text-align: center;
+  margin-top: var(--space-4);
+}
+
+.placeholder-page__card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 520px;
+  margin: 0 auto;
+  gap: var(--space-4);
+}
+
+.placeholder-page__status-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-full);
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-warning);
+}
+
+.placeholder-page__card-content h2 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+}
+
+.placeholder-page__card-content p {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.placeholder-page__footer-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-xs);
+  color: var(--color-success);
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  margin-top: var(--space-2);
+}
+
+@media (max-width: 640px) {
+  .placeholder-page__title-row {
+    flex-direction: column;
+  }
+}
