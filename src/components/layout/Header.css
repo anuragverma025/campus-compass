@@ -15,6 +15,42 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.header__mobile-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-md);
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  transition: all var(--transition-fast);
+}
+
+.header__mobile-toggle:hover {
+  background-color: var(--bg-card-hover);
+  border-color: var(--border-medium);
+}
+
+.header__mobile-toggle:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+@media (max-width: 1023px) {
+  .header__mobile-toggle {
+    display: inline-flex;
+  }
 }
 
 .header__brand {
